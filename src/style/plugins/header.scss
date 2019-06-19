@@ -1,0 +1,31 @@
+header {
+    background: white;
+    border-bottom: $border-medium;
+    padding: $space-medium $space-large;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: $header-height;
+    .header-title {
+        display: flex;
+        align-items: center;
+        i {
+            font-weight: bold;
+            font-size: 18px;
+            color: $font-color-title;
+            margin-right: $space-small;
+            cursor: pointer;
+        }
+    }
+    .header-tool {
+        display: flex;
+        i {
+            /*font-weight: bold;*/
+            font-size: 16px;
+            line-height: 16px;
+            color: $font-color-primary;
+            cursor: pointer;
+            margin-left: $space-large;
+        }
+    }
+}

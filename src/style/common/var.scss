@@ -1,0 +1,210 @@
+//region color-warehouse
+$color-white: #ffffff;
+$color-black: #000000;
+
+//$grey-d9dee4: #D9DEE4;
+//$grey-999999: #999999;
+//$grey-909399: #909399;
+//$grey-525252: #525252;
+//$grey-333333: #333333;
+
+$blue-1: #e6f7ff;
+$blue-2: #bae7ff;
+$blue-3: #91d5ff;
+$blue-4: #69c0ff;
+$blue-5: #40a9ff;
+$blue-6: #1890ff;
+$blue-7: #096dd9;
+$blue-8: #0050b3;
+$blue-9: #003a8c;
+$blue-10: #002766;
+
+//默认中性色色谱（默认） 从黑到白
+$color-neutral-1: $color-black;
+$color-neutral-2: mix($color-black, $color-white, 85%);
+$color-neutral-3: mix($color-black, $color-white, 65%);
+$color-neutral-4: mix($color-black, $color-white, 45%);
+$color-neutral-5: mix($color-black, $color-white, 25%);
+$color-neutral-6: mix($color-black, $color-white, 15%);
+$color-neutral-7: mix($color-black, $color-white, 9%);
+$color-neutral-8: mix($color-black, $color-white, 4%);
+$color-neutral-9: mix($color-black, $color-white, 2%);
+$color-neutral-10: $color-white;
+
+//深色背景中性色色谱 从深到浅
+$dark-color-neutral-1: $color-white;
+$dark-color-neutral-2: mix($color-white, $color-black, 100%);
+$dark-color-neutral-3: mix($color-white, $color-black, 85%);
+$dark-color-neutral-4: mix($color-white, $color-black, 65%);
+$dark-color-neutral-5: mix($color-white, $color-black, 45%);
+$dark-color-neutral-6: mix($color-white, $color-black, 25%);
+$dark-color-neutral-7: #002140;
+$dark-color-neutral-8: #001529;
+$dark-color-neutral-9: #000c17;
+$dark-color-neutral-10: $color-black;
+
+$color-primary-1: $blue-1;
+$color-primary-2: $blue-2;
+$color-primary-3: $blue-3;
+$color-primary-4: $blue-4;
+$color-primary-5: $blue-5;
+$color-primary-6: $blue-6;
+$color-primary-7: $blue-7;
+$color-primary-8: $blue-8;
+$color-primary-9: $blue-9;
+$color-primary-10: $blue-10;
+
+$color-primary: #1890ff;
+$color-success: #52c41a;
+$color-warning: #faad14;
+$color-danger: #f5222d;
+//endregion
+
+//region color-params
+$hover-percent: 10%;
+$focus-percent: 20%;
+$active-percent: 20%;
+
+//region color-base
+$color-primary-light: mix($color-white, $color-primary, 80%) !default;
+$color-success-light: mix($color-white, $color-success, 80%) !default;
+$color-warning-light: mix($color-white, $color-warning, 80%) !default;
+$color-danger-light: mix($color-white, $color-danger, 80%) !default;
+
+$color-primary-lighter: mix($color-white, $color-primary, 90%) !default;
+$color-success-lighter: mix($color-white, $color-success, 90%) !default;
+$color-warning-lighter: mix($color-white, $color-warning, 90%) !default;
+$color-danger-lighter: mix($color-white, $color-danger, 90%) !default;
+//endregion
+
+//region space
+$space-mini: 4px;
+$space-small: 8px;
+$space-medium: 16px;
+$space-large: 24px;
+$space-xl: 32px;
+
+$breakpoints: 1440px;
+
+//endregion
+
+//region font
+$font-family: Helvetica, "Helvetica Neue", Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", sans-serif;
+
+$font-size-base: 14px;
+$font-size-small: $font-size-base - 2px;
+$font-size-large: $font-size-base + 2px;
+$font-size-title-m: $font-size-base + 4px;
+$font-size-title-l: $font-size-base + 6px;
+$font-size-title-xl: $font-size-base + 10px;
+$font-size-title-xxl: $font-size-base + 14px;
+$font-size-title-xxxl: $font-size-base + 18px;
+$font-size-title-xxxxl: $font-size-base + 22px;
+
+$font-color-title: $color-neutral-2; //标题
+$font-color-primary: $color-neutral-3; //正文颜色
+$font-color-secondary: $color-neutral-4; //辅助文字颜色
+$font-color-disabled: $color-neutral-5; //失效文字颜色
+
+$dark-font-color-title: $dark-color-neutral-2;
+$dark-font-color-primary: $dark-color-neutral-3;
+$dark-font-color-secondary: $dark-color-neutral-4;
+$dark-font-color-disabled: $dark-color-neutral-5;
+//endregion
+
+//region background
+$background-color-dark: $color-neutral-7;
+$background-color-medium: $color-neutral-8;
+$background-color-light: $color-neutral-9;
+$background-color-primary: #edf6ff;
+
+$dark-background-color-light: $dark-color-neutral-7;
+$dark-background-color: $dark-color-neutral-8;
+$dark-background-color-dark: $dark-color-neutral-9;
+//endregion
+
+//region border
+$border-color-medium: $color-neutral-7;
+$border-color-dark: $color-neutral-6;
+$dark-border-color-medium: $dark-color-neutral-3;
+
+$border-medium: 1px solid $border-color-medium;
+$border-light: 1px solid $color-neutral-8;
+$border-dark: 1px solid $color-neutral-6;
+$dark-border-medium: 1px solid $dark-border-color-medium;
+$dark-border-light: 1px solid $dark-color-neutral-2;
+//endregion
+
+//region border-radius
+$border-radius-mini: 3px;
+$border-radius-small: 5px;
+$border-radius-medium: 8px;
+$border-radius-circle: 100%;
+//endregion
+
+//region input
+$input-height-medium: 32px;
+$input-height-small: 28px;
+//endregion
+
+//region button
+
+//endregion
+//region shadow
+$shadow-1: 1px 1px 3px 0px rgba(#000, .12);
+$shadow-1-up: 0px -1px 3px 0px rgba(#000, .12);
+$shadow-1-right: 1px 0px 3px 0px rgba(#000, .12);
+$shadow-1-down: 0px 1px 3px 0px rgba(#000, .12);
+$shadow-1-left: -1px 0px 3px 0px rgba(#000, .12);
+$shadow-2: 2px 2px 4px 0px rgba(#000, .12);
+$shadow-2-up: 0px -2px 4px 0px rgba(#000, .12);
+$shadow-2-right: 2px 0px 4px 0px rgba(#000, .12);
+$shadow-2-down: 0px 2px 4px 0px rgba(#000, .12);
+$shadow-2-left: -2px 0px 4px 0px rgba(#000, .12);
+$shadow-3: 3px 3px 5px 0px rgba(#000, .12);
+$shadow-3-up: 0px -3px 5px 0px rgba(#000, .12);
+$shadow-3-right: 3px 0px 5px 0px rgba(#000, .12);
+$shadow-3-down: 0px 3px 5px 0px rgba(#000, .12);
+$shadow-3-left: -3px 0px 5px 0px rgba(#000, .12);
+
+$shadow-light-1: 1px 1px 3px 0px rgba(#000, .06);
+$shadow-light-1-up: 0px -1px 3px 0px rgba(#000, .06);
+$shadow-light-1-right: 1px 0px 3px 0px rgba(#000, .06);
+$shadow-light-1-down: 0px 1px 3px 0px rgba(#000, .06);
+$shadow-light-1-left: -1px 0px 3px 0px rgba(#000, .06);
+$shadow-light-2: 2px 2px 4px 0px rgba(#000, .06);
+$shadow-light-2-up: 0px -2px 4px 0px rgba(#000, .06);
+$shadow-light-2-right: 2px 0px 4px 0px rgba(#000, .06);
+$shadow-light-2-down: 0px 2px 4px 0px rgba(#000, .06);
+$shadow-light-2-left: -2px 0px 4px 0px rgba(#000, .06);
+$shadow-light-3: 3px 3px 5px 0px rgba(#000, .06);
+$shadow-light-3-up: 0px -3px 5px 0px rgba(#000, .06);
+$shadow-light-3-right: 3px 0px 5px 0px rgba(#000, .06);
+$shadow-light-3-down: 0px 3px 5px 0px rgba(#000, .06);
+$shadow-light-3-left: -3px 0px 5px 0px rgba(#000, .06);
+//endregion
+
+//region corner
+$corner-mini: 4px;
+$corner-small: 6px;
+$corner-large: 16px;
+$corner-circle: 50%;
+//endregion
+
+//region header
+$header-height: 64px;
+//endregion
+
+//region aside
+$aside-width: 256px;
+//endregion
+
+//region main
+$main-height: calc(100% - 64px);
+$main-width: calc(100% - 256px);
+//endregion
+
+$container-width-small: 360px;
+$container-width-medium: 480px;
+
+

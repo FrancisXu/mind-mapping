@@ -1,0 +1,63 @@
+@import "../common/var";
+
+.el-card {
+    margin-bottom: $space-large;
+    .card-header {
+        margin-bottom: $space-small;
+    }
+    .card-content {
+        display: flex;
+        align-items: center;
+        .left {
+            width: 50%;
+            p {
+                color: $font-color-secondary;
+                margin-bottom: $space-mini;
+            }
+            h4 {
+                color: $font-color-primary;
+            }
+        }
+        .right {
+            width: 50%;
+            p {
+                color: $font-color-secondary;
+                margin-bottom: $space-mini;
+            }
+            h4 {
+                color: $font-color-primary;
+            }
+        }
+    }
+    .card-footer.card-footer_operate {
+        margin: 20px -20px -20px -20px;
+        background-color: $background-color-light;
+        display: flex;
+        align-items: center;
+        border-top: $border-medium;
+
+        .item {
+            width: 25%;
+            text-align: center;
+            padding: $space-small 0;
+            cursor: pointer;
+            i {
+                width: 100%;
+                color: $font-color-primary;
+                border-right: $border-medium;
+                padding: $space-small 0;
+                display: block;
+                @include font-size-large;
+                line-height: $font-size-large;
+                @media (max-width: $breakpoints) {
+                    line-height: $font-size-base;
+                }
+            }
+            &:last-child {
+                i {
+                    border-right: none;
+                }
+            }
+        }
+    }
+}

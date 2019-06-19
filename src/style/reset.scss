@@ -1,0 +1,32 @@
+@import 'common/var';
+@import 'common/function';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    &:focus {
+        outline: none;
+    }
+}
+
+body {
+    font-family: $font-family;
+    font-weight: 400;
+    color: $font-color-primary;
+    -webkit-font-smoothing: antialiased;
+    background-color: $background-color-medium;
+
+    @include font-size-medium;
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+//hr {
+//	margin-top: 20px;
+//	margin-bottom: 20px;
+//	border: 0;
+//	border-top: 1px solid #eeeeee;
+//}

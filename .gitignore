@@ -1,0 +1,7 @@
+node_modules
+/config
+/logs
+/public
+/certificate
+/.idea
+/dist

@@ -1,0 +1,66 @@
+@import "../common/var";
+@import "../common/function";
+
+.page.page_search {
+
+}
+
+.page.page_card {
+
+}
+
+.page.page_list {
+
+}
+
+.page-header {
+    background: white;
+    border-bottom: $border-medium;
+    margin-bottom: $space-medium;
+    padding: $space-medium $space-large;
+}
+
+.page-content {
+    margin: $space-large;
+
+    &.page-content_table {
+        padding: $space-large $space-xl;
+        border-radius: $border-radius-small;
+        background-color: white;
+
+        .condition-container {
+            .el-row {
+                margin-bottom: $space-medium;
+
+                .condition-btn-group {
+                    display: flex;
+                    justify-content: flex-end;
+                    &.start {
+                        justify-content: flex-start;
+                    }
+                }
+            }
+        }
+    }
+    &.page-content_card {
+        min-height: 588px;
+    }
+}
+
+.page_display_dark {
+    background-color: $dark-background-color;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    top: 0;
+}
+
+.paper {
+    padding: 30px;
+    background-color: white;
+    border-radius: $corner-small;
+    box-shadow: $shadow-2-down;
+    min-height: 1485px;
+    width: 1050px;
+}
