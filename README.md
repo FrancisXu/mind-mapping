@@ -1,32 +1,5 @@
-# client
+# 仿幕布形式实现思维导图功能
 
-## Project setup
-```
-npm install
-```
+## DEMO
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-"# admin" 
